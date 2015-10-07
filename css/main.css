@@ -1,41 +1,25 @@
-.container {
-  border: 1px solid black;
-  width: 535px;
-  min-height: 300px;
-  margin: 50px auto; }
-
-.box {
-  background-color: white;
-  border: 1px solid #7AC5CD;
-  width: 515px;
-  min-height: 280px;
-  margin: 5px auto; }
-
-.banner {
-  text-decoration: none;
-  height: 20pt;
-  background-color: #7AC5CD;
-  font-size: 16pt; }
-
-#S1 {
-  text-decoration: none;
-  color: white; }
-
-#S2 {
-  text-decoration: none;
-  color: white; }
-
-#S3 {
-  text-decoration: none;
-  color: white; }
-
-p {
-  transition: all 1s;
-  height: 80px;
-  padding: 15px; }
-
-.show {
-  overflow: hidden; }
-
-.hide {
-  overflow: hidden; }
+.accordian {
+  width: 400px;
+  margin: 25px auto; }
+  .accordian section {
+    border: 1px solid #3fc6d1;
+    height: 175px;
+    overflow: hidden;
+    transition: height 0.7s ease-in-out; }
+    .accordian section.hidden {
+      height: 43px; }
+    .accordian section h2 {
+      background-color: #00c6d6;
+      color: white;
+      padding: 10px 20px;
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out; }
+      .accordian section h2:hover {
+        background-color: #00daec;
+        padding-left: 30px; }
+    .accordian section p {
+      padding: 10px 20px;
+      font-size: 13px; }
